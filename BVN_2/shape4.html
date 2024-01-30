@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="big-circle circle">
+            <div class="box">
+                <div class="small-circle-1 circle"></div>        
+                <div class="small-circle-1 circle"></div>
+            </div>
+            <div class="small-circle-2 circle"></div>
+        </div>   
+    </div>
+     
+</body>
+<style>
+    .container{
+        margin: 100px;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        background-color: lightcoral;
+    }
+    .big-circle{
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        
+    } 
+    .box{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 30px;
+        left: 25px;
+    }   
+    .small-circle-2{
+        position: relative;
+        top: 20px;
+        left: 62.5px;
+    }
+</style>
+</html>

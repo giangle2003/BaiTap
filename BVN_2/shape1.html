@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1 box">
+            <div class="rectangle-1 rectangle"></div>
+            <div class="rectangle-2 rectangle"></div>
+            <div class="rectangle-3 rectangle"></div>
+        </div>
+        <div class="box-2 box">
+            <div class="rectangle-2 rectangle"></div>
+            <div class="rectangle-4 rectangle"></div>
+        </div>
+        <div class="box-3 box">
+            <div class="rectangle-5 rectangle"></div>
+        </div>
+        <div class="box-4 box">
+            <div class="rectangle-1 rectangle"></div>
+            <div class="rectangle-1 rectangle"></div>
+        </div>       
+    </div>
+</body>
+<style>
+.container{
+    width: 500px;
+    background: lightgray;
+    margin: 100px;
+    padding: 20px;
+}
+.rectangle{
+    height: 100px;  
+}
+.rectangle-1{
+    width: 30%;
+    background: pink;
+}
+.rectangle-2{
+    width: 40%;
+    background: plum;
+}
+.rectangle-3{
+    width: 20%;
+    background: orange;
+}
+.rectangle-4{
+    width: 50%;
+    background: green;
+}
+.rectangle-5{
+    width: 100%;
+    background: green;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.box-3{
+    display: flex;
+    justify-content: center;
+}
+
+</style>
+</html>

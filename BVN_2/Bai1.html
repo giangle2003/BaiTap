@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    let array = [1, 2, 3, 4, 5, 6];
+    let n = array.length;
+    function dem(array) {
+        let demLe = 0, demChan = 0;
+        for (let i = 0; i < n; i++) {
+            if (array[i] % 2 == 0) {
+                demChan++;
+            } else {
+                demLe++;
+            }
+        }
+        document.write("Số phần tử chẵn là :" + demChan + '<br>');
+        document.write("Số phần tử lẻ là :" + demLe);
+    }
+    document.write("Dãy là:" + array + '<br>')
+    dem(array);
+</script>
+
+</html>

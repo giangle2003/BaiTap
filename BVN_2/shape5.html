@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="square">
+            <div class="half-circle"></div>
+        </div>
+        <div class="circle-2 circle">
+            <div class="small-square">
+
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .container {
+        margin: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .square {
+        height: 100px;
+        width: 100px;
+        background: rebeccapurple;
+    }
+
+    .half-circle {
+        width: 50px;
+        height: 100px;
+        border-radius: 100% 0 0 100% / 50%;
+        ;
+        background: white;
+        position: absolute;
+        margin-left: 50px;
+    }
+
+    .circle-2 {
+        width: 100px;
+        height: 100px;
+        background: orange;
+        border-radius: 50%;
+        z-index: 20;
+        margin-left: 10px;
+    }
+
+    .small-square {
+        width: 50px;
+        height: 50px;
+        background: white;
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+</style>
+
+</html>
