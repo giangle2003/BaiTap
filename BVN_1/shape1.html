@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div class="container">
+            <div class="square-1"></div>
+            <div class="square-2" style="align-items: flex-end"></div>
+        </div>
+</body>
+<style>
+    
+    .container {
+        margin-left: 400px;
+        margin-top: 200px;
+        width: 400px;
+        height: 400px;
+        background: lightgray;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .container div{
+        width: 40%;
+        height: 40%;
+    }
+   .square-1{
+        background: pink;
+      
+   } 
+    .square-2{
+        background: lightgreen;
+        align-self: flex-end;
+    }
+</style>
+</html>
+

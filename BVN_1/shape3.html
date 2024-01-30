@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <div class="square-1"></div>
+            <div class="square-1"></div>
+        </div>
+        <div class="box-2">
+            <div class="square-2"></div>
+        </div>
+    </div>
+</body>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .box-1{
+        width: 150px;      
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .box-2{
+        width: 150px;      
+        display: flex;
+        justify-content: center;
+    }
+    .square-2{
+        height: 50px;
+        width: 50px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: red;
+    }
+    .square-1{
+        height: 50px;
+        width: 50px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+        background: red;
+    }
+</style>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="icon">
+                <i class="fa-regular fa-user fa-3x"></i>
+            </div>
+            <div class="textbox">
+                <input type="text" placeholder="USERNAME">
+                <input type="password" placeholder="PASSWORD">
+            </div>
+            <div class="button">
+                <button>LOGIN</button>
+                <p>Forgot password?</p>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .container {
+        margin-top: 100px;
+        margin-left: 500px;
+    }
+
+    .form {
+        width: 350px;
+        height: 350px;
+        background: orange;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    input {
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+        margin-top: 20px;
+        background: transparent;
+        border: 1.5px solid white;
+    }
+
+    ::placeholder {
+        color: white;
+        padding-left: 10px;
+    }
+
+    i {
+        color: white;
+    }
+
+    .icon {
+        margin-top: 25px;
+    }
+
+    .button {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    button {
+        width: 250px;
+        height: 40px;
+        background: rgb(149, 69, 230);
+        border: transparent;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px rebeccapurple;
+    }
+
+    p {
+        color: white;
+        align-self: flex-end;
+    }
+</style>
+
+</html>

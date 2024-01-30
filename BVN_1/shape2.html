@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box-1">
+            <div class="square">
+                <div class="triangle-up"></div>
+                <div class="triangle-down"></div>
+                
+            </div>
+            <div class="square">
+                <div class="triangle-up"></div>
+                <div class="triangle-down"></div>
+            </div>
+        </div>
+        <div class="box-2">
+            <div class="square">
+                <div class="triangle-up"></div>
+                <div class="triangle-down"></div>
+            </div>
+            <div class="square">
+                <div class="triangle-up"></div>
+                <div class="triangle-down"></div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+<style>
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin: 200px;
+    }
+    .triangle-up{
+        height: 0;
+        width: 0;
+        border-top: 0 solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid red;
+        border-left: 50px solid transparent;
+
+    }
+    .triangle-down{
+        height: 0;
+        width: 0;
+        border-top: 50px solid red;
+        border-right: 50px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-left: 50px solid transparent;
+    }
+</style>
+</html>
