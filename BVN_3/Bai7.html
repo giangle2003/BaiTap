@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="Login" onsubmit="return validateForm()">
+        <h2>SignUp</h2>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <span id="usernameError" style="color: red;"></span>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span id="passwordError" style="color: red;"></span>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span id="emailError" style="color: red;"></span>
+        </div>
+        <div>
+            <label for="fullname">Fullname:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <span id="fullnameError" style="color: red;"></span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <style>
+        form {
+            padding: 0 20px 20px 20px;
+            border: 2px solid black;
+            width: 400px;
+            margin: auto;
+        }
+
+        h2 {
+            margin-left: 150px;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+
+        button {
+            background: white;
+            color: black;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-left: 150px;
+            border: lightgray;
+            box-shadow: 3px 3px lightgray;
+            font-size: 16px;
+        }
+
+        input {
+            width: 300px;
+        }
+
+        #password {
+            margin-left: 15px;
+        }
+
+        #username {
+            margin-left: 10px;
+        }
+
+        #email {
+            margin-left: 37px;
+        }
+
+        #fullname {
+            margin-left: 14px;
+
+        }
+    </style>
+    <script>
+        function validateForm() {
+            let username = document.getElementById('username').value;
+            let password = document.getElementById('password').value;
+            let email = document.getElementById('email').value;
+            let fullname = document.getElementById('fullname').value;
+            let reg = /\S+@\S+/; // Regex for email validation
+
+
+            let usernameError = document.getElementById('usernameError');
+            let passwordError = document.getElementById('passwordError');
+            let emailError = document.getElementById('emailError');
+            let fullnameError = document.getElementById('fullnameError');
+            
+
+            if (username.length < 5 || username.length > 10) {
+                usernameError.innerHTML = 'Username phải có độ dài từ 5 đến 10 ký tự.';
+                return false;
+            }
+
+            if (password.length < 5 || password.length > 10) {
+                passwordError.innerHTML = 'Password phải có độ dài từ 5 đến 10 ký tự.';
+                return false;
+            }
+
+            if (email === '' || !reg.test(email)) {
+                emailError.innerHTML = 'Email không hợp lệ.';
+                return false;
+            }
+
+            if (fullname.length < 5 || fullname.length > 10) {
+                fullnameError.innerHTML = 'Fullname phải có độ dài từ 5 đến 10 ký tự.';
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+
+</html>
